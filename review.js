@@ -53,7 +53,11 @@
 var computer = {
   active: false
 };
-computer.??? = ???;
+
+
+computer.switchOn = function(){
+	this.active = true
+};
 
 computer.switchOn();
 console.log("Computer should be active:", computer.active === true);
