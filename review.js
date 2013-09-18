@@ -72,13 +72,13 @@ Create a puppy object:
 
 var puppy = {
 	mood: "hungry",
-	feed: function () {
+	is: function () {
 		this.mood = "fed";
 	}
 };
 
 console.log("Puppy should be hungry:", puppy.mood);
-puppy.feed();
+puppy.is("fed");
 console.log("Puppy should be fed:", puppy.mood);
 
 
