@@ -6,13 +6,14 @@
 // console.log("11 plus 4 is:", add(11, 4));
 
 var person = {
-  name: "Bob"
+  name: "Bob",
   jumpCount: 0,
+  
   jump: function () {
-    this.jumpCount = this.jumpCount + 1;
+    this.jumpCount += 1;
   }
 };
 
-person.jump;
-person.jump;
-console.log("Person should jump twice:", person.jumpCount);
+person.jump();
+person.jump();
+console.log(person.name + " should have jumped twice:" + person.jumpCount);
