@@ -63,30 +63,45 @@
 // console.log("Computer should be active:", computer.active === true);
 
 //INDIVIDUAL 6
-Create a puppy object:
+// Create a puppy object:
 
-// With a property mood that points to a string 'hungry'
-// With a property feed that points to a function:
-// This function sets the puppy's mood to 'fed'
-// You must use this in your function
+// // With a property mood that points to a string 'hungry'
+// // With a property feed that points to a function:
+// // This function sets the puppy's mood to 'fed'
+// // You must use this in your function
 
-var puppy = {
-	mood: "hungry",
-	is: function () {
-		this.mood = "fed";
-	}
+// var puppy = {
+// 	mood: "hungry",
+// 	is: function () {
+// 		this.mood = "fed";
+// 	}
+// };
+
+// console.log("Puppy should be hungry:", puppy.mood);
+// puppy.is("fed");
+// console.log("Puppy should be fed:", puppy.mood);
+
+
+//Individual Exercise #7
+
+// Write a function (not a constructor) createTrashCan that:
+
+// Takes one parameter trashAmount
+// Returns an object that:
+// Has one property trash with the value trashAmount
+// var can = createTrashCan(2);
+// console.log('Trash can should have 2 trash:', can.trash);
+
+
+var createTrashCan = function (trashAmount) {
+	return {
+		trash: trashAmount,
+	 }
 };
 
-console.log("Puppy should be hungry:", puppy.mood);
-puppy.is("fed");
-console.log("Puppy should be fed:", puppy.mood);
+var can = createTrashCan(2)
 
-
-
-
-
-
-
+console.log('Trash can should have 2 trash:', can.trash)
 
 
 
