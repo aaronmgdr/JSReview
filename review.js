@@ -18,17 +18,31 @@
 // person.jump();
 // console.log(person.name + " should have jumped twice:" + person.jumpCount);
 
+// INDIVIDUAL 3
+// var game = {};
+// game.wins = 0;
 
-var game = {};
-game.wins = 0;
+// game.incrementWins = function (amount) {
+//   this.wins += amount;
+// };
 
-game.incrementWins = function (amount) {
-  this.wins += amount;
+// game.incrementWins(2);
+// console.log("Game wins should be 2:" + game.wins);
+
+// game.incrementWins(7);
+// console.log("Game wins should be 9:" + game.wins);
+
+// Individual 4
+
+var whinyPerson = {
+  pokeCount: 0,
+  poke: ???
 };
 
-game.incrementWins(2);
-console.log("Game wins should be 2:" + game.wins);
+whinyPerson.poke();
+whinyPerson.poke();
+console.log("Poke count should be 2:", whinyPerson.pokeCount);
 
-game.incrementWins(7);
-console.log("Game wins should be 9:" + game.wins);
+whinyPerson.poke();
+console.log("Poke count should be 3:", whinyPerson.pokeCount);
 
