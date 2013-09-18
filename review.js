@@ -21,12 +21,14 @@
 
 var game = {};
 game.wins = 0;
-game.incremntWins = function (amount) {
-  wins += amount;
+
+game.incrementWins = function (amount) {
+  this.wins += amount;
 };
 
 game.incrementWins(2);
-console.log("Game wins should be 2:", person.jumpCount);
+console.log("Game wins should be 2:" + game.wins);
 
 game.incrementWins(7);
-console.log("Game wins should be 9:", person.jumpCount);
+console.log("Game wins should be 9:" + game.wins);
+
