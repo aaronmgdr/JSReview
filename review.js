@@ -50,17 +50,43 @@
 
 // INDIVIDUAL 5
 
-var computer = {
-  active: false
+// var computer = {
+//   active: false
+// };
+
+
+// computer.switchOn = function(){
+// 	this.active = true
+// };
+
+// computer.switchOn();
+// console.log("Computer should be active:", computer.active === true);
+
+//INDIVIDUAL 6
+Create a puppy object:
+
+// With a property mood that points to a string 'hungry'
+// With a property feed that points to a function:
+// This function sets the puppy's mood to 'fed'
+// You must use this in your function
+
+var puppy = {
+	mood: "hungry",
+	feed: function () {
+		this.mood = "fed";
+	}
 };
 
+console.log("Puppy should be hungry:", puppy.mood);
+puppy.feed();
+console.log("Puppy should be fed:", puppy.mood);
 
-computer.switchOn = function(){
-	this.active = true
-};
 
-computer.switchOn();
-console.log("Computer should be active:", computer.active === true);
+
+
+
+
+
 
 
 
