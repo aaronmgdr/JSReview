@@ -34,17 +34,29 @@
 
 // Individual 4
 
-var whinyPerson = {
-  pokeCount: 0,
-  poke: function () {
-  	this.pokeCount += 1;
-  }
+// var whinyPerson = {
+//   pokeCount: 0,
+//   poke: function () {
+//   	this.pokeCount += 1;
+//   }
+// };
+
+// whinyPerson.poke();
+// whinyPerson.poke();
+// console.log("Poke count should be 2:", whinyPerson.pokeCount);
+
+// whinyPerson.poke();
+// console.log("Poke count should be 3:", whinyPerson.pokeCount);
+
+// INDIVIDUAL 5
+
+var computer = {
+  active: false
 };
+computer.??? = ???;
 
-whinyPerson.poke();
-whinyPerson.poke();
-console.log("Poke count should be 2:", whinyPerson.pokeCount);
+computer.switchOn();
+console.log("Computer should be active:", computer.active === true);
 
-whinyPerson.poke();
-console.log("Poke count should be 3:", whinyPerson.pokeCount);
+
 
