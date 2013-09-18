@@ -93,15 +93,46 @@
 // console.log('Trash can should have 2 trash:', can.trash);
 
 
-var createTrashCan = function (trashAmount) {
+// var createTrashCan = function (trashAmount) {
+// 	return {
+// 		trash: trashAmount,
+// 	 }
+// };
+
+// var can = createTrashCan(2)
+
+// console.log('Trash can should have 2 trash:', can.trash)
+
+// Individual Exercise #8
+
+// Write a function (not a constructor) createBattery that:
+
+// Takes one parameter charge
+// Returns an object that:
+// Has a property energy with the value charge
+// Has a property use that points to a function:
+// Takes one parameter amount
+// Deducts energy by that amount, unless amount is greater than energy
+// Javascript has no unless keyword.
+
+var createBattery = function (charge) {
 	return {
-		trash: trashAmount,
-	 }
+		energy: charge,
+		use: function (amount) {
+			this.energy >= amount ? this.energy -= amount : "C'est Impossible"
+		}
+	}
 };
 
-var can = createTrashCan(2)
+var battery = createBattery(3);
+console.log('Battery should have 3 energy:', battery.energy);
 
-console.log('Trash can should have 2 trash:', can.trash)
+battery.use(2);
+console.log('Battery should have 1 energy:', battery.energy);
+
+battery.use(5);
+console.log('Battery should have 1 energy:', battery.energy);
+
 
 
 
