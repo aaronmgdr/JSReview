@@ -36,7 +36,9 @@
 
 var whinyPerson = {
   pokeCount: 0,
-  poke: ???
+  poke: function () {
+  	this.pokeCount += 1;
+  }
 };
 
 whinyPerson.poke();
