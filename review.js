@@ -200,18 +200,28 @@
 
 // Individual Exercise #10
 // Fix the following code (3 minor errors) and complete result so that the code outputs "Surprise!"
-var house = {
-  room: {
-    emptyBox: {},
-    size: '50 sqft'
-  },
-  otherRoom: {
-    box: {
-      writtenNote: "Surprise!"
-    },
-    size: '35 sqft'
-  }
-};
+// var house = {
+//   room: {
+//     emptyBox: {},
+//     size: '50 sqft'
+//   },
+//   otherRoom: {
+//     box: {
+//       writtenNote: "Surprise!"
+//     },
+//     size: '35 sqft'
+//   }
+// };
 
-var result = house.otherRoom.box.writtenNote;
-console.log("You find a written note:", result);
+// var result = house.otherRoom.box.writtenNote;
+// console.log("You find a written note:", result);
+
+Individual Exercise #11
+Complete the missing lines so that the following code works:
+
+var calculator = {};
+
+// ???
+
+var result = calculator.multiply(3, 7);
+console.log('3 time 7 is', result);
