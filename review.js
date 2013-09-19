@@ -245,15 +245,35 @@ console.log('Horn should honk a honky sound:', myHorn.honk());
 
 //################# Individual Exercise #14 ########################
 
-Complete the following code so that the "parent" constructor is called:
+// Complete the following code so that the "parent" constructor is called:
 
-var Building = function (name) {
+// var Building = function (name) {
+//   this.name = name;
+// };
+
+// var Campus = function (name) {
+//   Building.call(this, name);
+// };
+
+// var mks = new Campus('MakerSquare');
+// console.log('Campus should be named MakerSquare', mks.name);
+
+//################# Individual Exercise #15 ########################
+//Complete the following code so that the inherited method is called:
+
+var Person = function (name) {
   this.name = name;
 };
-
-var Campus = function (name) {
-  Building.call(this, name);
+Person.prototype.sayName = function () {
+  return "Hi my name is " + this.name;
 };
 
-var mks = new Campus('MakerSquare');
-console.log('Campus should be named MakerSquare', mks.name);
+var Butler = function (???) {
+  Person.call(this, ???);
+};
+Butler.prototype = ???;
+
+var butler = new Butler('Sebastian');
+console.log("What's your name, butler?", butler.sayName());
+
+
