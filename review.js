@@ -227,3 +227,33 @@
 
 // var result = calculator.multiply(3,7);
 // console.log('3 time 7 is', result);
+
+
+//################# Individual Exercise #12 ########################
+
+//Complete the missing lines so that the following code works:
+
+var createHorn = function () {
+  var horn = {};
+  ???
+  return horn;
+};
+
+var myHorn = createHorn();
+console.log('Horn should honk a honky sound:', myHorn.honk());
+
+
+//################# Individual Exercise #14 ########################
+
+Complete the following code so that the "parent" constructor is called:
+
+var Building = function (name) {
+  this.name = name;
+};
+
+var Campus = function (name) {
+  Building.call(this, name);
+};
+
+var mks = new Campus('MakerSquare');
+console.log('Campus should be named MakerSquare', mks.name);
