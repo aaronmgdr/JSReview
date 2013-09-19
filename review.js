@@ -216,12 +216,14 @@
 // var result = house.otherRoom.box.writtenNote;
 // console.log("You find a written note:", result);
 
-Individual Exercise #11
-Complete the missing lines so that the following code works:
+// Individual Exercise #11
+// Complete the missing lines so that the following code works:
 
-var calculator = {};
+// var calculator = {
+// 	multiply: function (x,y) {
+// 		return x * y;
+// 	}
+// };
 
-// ???
-
-var result = calculator.multiply(3, 7);
-console.log('3 time 7 is', result);
+// var result = calculator.multiply(3,7);
+// console.log('3 time 7 is', result);
